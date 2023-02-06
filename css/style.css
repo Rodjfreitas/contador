@@ -5,11 +5,15 @@
   font-family: 'Red Hat Text', sans-serif;
 }
 
-:root{
-  --global-backcolor:hsl(236, 21%, 26%);
-  --global-branco:hsl(0, 0%, 100%);
-  --paragrafo-color:hsl(237, 18%, 59%);
-  --global-backImage:hsl(345, 95%, 68%);
+:root {
+  --Grayish-blue: hsl(237, 18%, 59%);
+  --Soft-red: hsl(345, 95%, 68%);
+  --White: hsl(0, 0%, 100%);
+  --Dark-desaturated-blue: hsl(236, 21%, 26%);
+  --Dark-desaturated-blue2: hsl(237, 21%, 19%);
+  --Dark-desaturated-blue3: hsl(234, 22%, 9%);
+  --Very-dark-blue: hsl(235, 16%, 14%);
+  --Very-dark-blue2: hsl(234, 17%, 12%);
 }
 
 body{
@@ -38,19 +42,49 @@ h1{
   font-size: 15px;
 }
 
-#principal{
+#cards{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 30px;
+}
+
+.tempo {
+  text-align: center;
+  width: 160px;
+  height: 155px;
+  font-size: 5rem;
+  padding: 30px 30px;
+  font-weight: 700;
+  border-radius: 0.8rem;
+  color: var(--Soft-red);
+  background-color: var(--Dark-desaturated-blue);
+  box-shadow: 0px 10px 0px 0px var(--Dark-desaturated-blue3);
+}
+
+#card-principal{
   display: flex;
-  
+  height: 50vh;
+  justify-content: center;
+  padding-top: 10vh;
+  gap: 30px;
 }
 
-#principal div{
-  margin: 15px;
+.filtro {
+  position: absolute;
+  width: 100%;
+  height: 77.5px;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 5;
 }
 
-#principal p{
-  text-transform: uppercase;
-  color: var(--paragrafo-color);
-  font-size: 12px;
+.time-text {
+  color: var(--Grayish-blue);
+  font-weight: 700;
+  letter-spacing: 7px;
 }
 
 footer{

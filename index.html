@@ -18,7 +18,7 @@
   <style>
     body{
       background-image: url(images/bg-stars.svg);
-      background-color: var(--global-backcolor);
+      background-color: var(--Dark-desaturated-blue);
 
     }
 
@@ -30,25 +30,33 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>    
+<body onload="Executar()">    
   <header>
   <h1>We're launching soon</h1>
 </header>
 
   <section>
 
-    <div id="principal">
-      <div id="dias">
-        <p>Days</p>
+    <div id="card-principal">
+      <div id="cards">
+        <div class="tempo" id="dia"></div>
+        <div class="filtro"></div>
+        <p class="time-text">Days</p>
       </div>
-      <div id="horas">
-        <p>Hours</p>
+      <div id="cards">
+        <div class="tempo" id="horas"></div>
+        <div class="filtro"></div>
+        <p class="time-text">Hours</p>
       </div>
-      <div id="minutos">
-        <p>Minutes</p>
+      <div id="cards">
+        <div class="tempo"id="minutos"></div>
+        <div class="filtro"></div>
+        <p class="time-text">Minutes</p>
       </div>
-      <div id="segundos">
-        <p>Seconds</p>
+      <div id="cards">
+        <div class="tempo" id="segundos"></div>
+        <div class="filtro"></div>
+        <p class="time-text">Seconds</p>
       </div>
     </div>
   </section>
